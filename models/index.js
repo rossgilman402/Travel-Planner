@@ -9,7 +9,7 @@ Location.belongsToMany(Traveller, {
     model: Trip,
     unique: false,
   },
-  as: "planned_trips",
+  as: "location_travellers",
 });
 
 Traveller.belongsToMany(Location, {
@@ -17,7 +17,7 @@ Traveller.belongsToMany(Location, {
     model: Trip,
     unique: false,
   },
-  as: "location_travellers",
+  as: "planned_trips",
 });
 
 module.exports = {
